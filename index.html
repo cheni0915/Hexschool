@@ -1,15 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>HTML、CSS 最終作業</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="all.css">
+    <meta name="description" content="六角學院 HTML、CSS 最終作業">
+    <meta name="keywords" content="六角學院, Hex School, HTML, CSS">
+    <meta name="author" content="Chen I">
+    <!-- FB社群 -->
+    <meta property="og:title" content="HTML、CSS 最終作業">
+    <meta property="og:description" content="六角學院 HTML、CSS 最終作業">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png">
+    <!-- icon -->
+    <link rel="shortcut icon" href="https://www.hexschool.com/favicon.ico">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>
-        標題
-    </h1>
+    <div class="wrap">
+        <header>
+            <div class="social_link clearfix">
+                <ul>
+                    <li class="facebook"><a href="#">
+                        <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/facebookIcon.png" alt="FB圖片">粉絲團
+                    </a></li>
+                    <li class="twitter"><a href="#">
+                        <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/twitterIcon.png" alt="twitter圖片">追隨我們
+                    </a></li>
+                </ul>
+            </div>
+            <nav>
+                <h1><a href="#">Hex School</a></h1>
+                <ul class="navbar">
+                    <li><a href="#">首頁</a></li>
+                    <li><a href="#">產品介紹</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="banner">
+                <h2>六角學院 <br>
+                    讓您奠定良好的前端基礎
+                </h2>
+            </section>
+            <section class="course">
+                <ul>
+                    <li class="course_item">
+                        <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png" alt="Html圖片">
+                        <h3>Html 5 基礎教學</h3>
+                        <p>主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程， 講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
+                    </li>
+                    <li class="course_item">
+                        <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/rwd.png" alt="響應式網站設計圖片">
+                        <h3>響應式網站設計</h3>
+                        <p>
+                            響應式網站設計 (Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。 六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。
+                        </p>
+                    </li>
+                    <li class="course_item jquery">
+                        <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/jQuery.png" alt="jQuery圖片">
+                        <h3>jQuery 實戰教學</h3>
+                        <p>本課程有以下特色</p>
+                        <ul>
+                            <li>瞭解變數的使用方法</li>
+                            <li>學習並操作DOM</li>
+                            <li>學習基本數學運算方法</li>
+                            <li>套件的操作及運用</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="compare">
+                <h3>線上及實體課程的差異</h3>
+                <table class="compare_table">
+                    <tr>
+                        <th>項目</th>
+                        <th>Hex School 線上課程</th>
+                        <th>一般線上課程</th>
+                        <th>實體課程</th>
+                    </tr>
+                    <tr>
+                        <td>費用</td>
+                        <td class="text_style1">較低</td>
+                        <td class="text_style1">較低</td>
+                        <td>較高</td>
+                    </tr>
+                    <tr>
+                        <td>學習效果</td>
+                        <td>一般</td>
+                        <td class="text_style1">較低</td>
+                        <td class="text_style1">很好</td>
+                    </tr>
+                    <tr>
+                        <td>Code review</td>
+                        <td class="text_style1">有</td>
+                        <td>無</td>
+                        <td>不一定</td>
+                    </tr>
+                    <tr>
+                        <td>課程更新速度</td>
+                        <td class="text_style1">普通</td>
+                        <td class="text_style1">普通</td>
+                        <td>較慢</td>
+                    </tr>
+                    <tr>
+                        <td>多次複習</td>
+                        <td class="text_style1">可</td>
+                        <td>可</td>
+                        <td>不可</td>
+                    </tr>
+                    <tr>
+                        <td>字幕</td>
+                        <td class="text_style1">有</td>
+                        <td>不一定</td>
+                        <td>板書</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="contact">
+                <h3>對我們課程有興趣嗎？ <br>
+                    歡迎留下您的資料
+                </h3>
+                <form action="index.html" >
+                    <textarea class="contact_message" name="message" id="message"  placeholder="請輸入您的留言"></textarea>
+                    <div class="contact_info">
+                        <!-- name -->
+                        <div class="contact_info_box">
+                            <label for="name">姓名</label> <br>
+                            <input type="text" id="name" name="name" placeholder="請輸入您的姓名">
+                        </div>
+                        <div class="contact_info_box">
+                            <label for="tel">電話</label> <br>
+                            <input type="text" id="tel" name="tel" placeholder="請輸入您的電話">
+                        </div>
+                        <div class="contact_info_box">
+                            <label for="email">電子郵件</label> <br>
+                            <input type="email" id="email" name="email" placeholder="請輸入您的電子郵件">
+                        </div>
+                        <button class="btn clearfix" type="submit">送出</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <h1>
+                <a href="#">
+                    Hex School
+                </a>
+            </h1>
+            <ul>
+                <li>
+                    聯絡我們 :
+                    <a href="#">hexschool@gmail.com</a>
+                </li>
+                <li>
+                    電話 :
+                    <a href="#">0999123456</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
 </body>
 </html>
