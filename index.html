@@ -12,13 +12,23 @@
     <meta property="og:title" content="HTML、CSS 最終作業">
     <meta property="og:description" content="六角學院 HTML、CSS 最終作業">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="">
+    <meta property="og:url" content="https://cheni0915.github.io/Hexschool-HTML-CSS-Final/">
     <meta property="og:image" content="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png">
     <!-- icon -->
     <link rel="shortcut icon" href="https://www.hexschool.com/favicon.ico">
     <!-- css link -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Google Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S5VS8RJVLN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-S5VS8RJVLN');
+    </script>
 </head>
 <body>
     <div class="wrap">
@@ -131,15 +141,15 @@
                     <div class="contact_info">
                         <!-- name -->
                         <div class="contact_info_box">
-                            <label for="name">姓名</label> <br>
+                            <label for="name">姓名</label>
                             <input type="text" id="name" name="name" placeholder="請輸入您的姓名">
                         </div>
                         <div class="contact_info_box">
-                            <label for="tel">電話</label> <br>
+                            <label for="tel">電話</label>
                             <input type="text" id="tel" name="tel" placeholder="請輸入您的電話">
                         </div>
                         <div class="contact_info_box">
-                            <label for="email">電子郵件</label> <br>
+                            <label for="email">電子郵件</label>
                             <input type="email" id="email" name="email" placeholder="請輸入您的電子郵件">
                         </div>
                         <button class="btn clearfix" type="submit">送出</button>
@@ -148,19 +158,21 @@
             </section>
         </main>
         <footer>
-            <h1>
+            <div class="footer_img">
                 <a href="#">
                     Hex School
                 </a>
-            </h1>
+            </div>
             <ul>
                 <li>
                     聯絡我們 :
-                    <a href="#">hexschool@gmail.com</a>
+                    <!-- a:mail -->
+                    <a href="mailto:">hexschool@gmail.com</a>
                 </li>
                 <li>
                     電話 :
-                    <a href="#">0999123456</a>
+                    <!-- a:tel -->
+                    <a href="tel:+">0999123456</a>
                 </li>
             </ul>
         </footer>
